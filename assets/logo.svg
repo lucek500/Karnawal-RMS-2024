@@ -1,0 +1,13 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+ <title>logo</title>
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
+   <feGaussianBlur stdDeviation="9.5" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path filter="url(#svg_1_blur)" id="svg_1" d="m100,155.935c-31.21547,0 -56.5,-25.03168 -56.5,-55.935c0,-30.90331 25.28453,-55.935 56.5,-55.935c31.21547,0 56.5,25.03168 56.5,55.935c0,30.90331 -25.28453,55.935 -56.5,55.935z" opacity="undefined" stroke-width="41" stroke="#ffda05" fill="none"/>
+  <path id="svg_2" d="m100,133c-19.06077,0 -34.5,-14.76796 -34.5,-33c0,-18.23204 15.43923,-33 34.5,-33c19.06077,0 34.5,14.76796 34.5,33c0,18.23204 -15.43923,33 -34.5,33z" opacity="undefined" stroke-width="0" stroke="#ffda05" fill="#ffffff"/>
+ </g>
+</svg>
