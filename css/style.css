@@ -48,6 +48,13 @@ body {
   max-width: 80rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .logo-container {
@@ -118,6 +125,7 @@ body {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 300;
+  min-width: 60px;
 }
 
 .countdown-timer li span {
@@ -134,5 +142,37 @@ body {
 .emoji span {
   font-size: 4rem;
   padding: 0 0.5rem;
+}
+
+.btn {
+  all: initial;
+  font-family: inherit;
+  background-color: #ffda05;
+  padding: 0.8rem 1.6rem;
+  margin: 1rem auto;
+  font-weight: 800;
+  font-size: 1.4rem;
+  border-radius: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3rem;
+}
+
+.btn .icon {
+  height: 32px;
+  width: 32px;
+}
+
+.btn:hover {
+  background-color: #ffe238;
 }
 /*# sourceMappingURL=style.css.map */
