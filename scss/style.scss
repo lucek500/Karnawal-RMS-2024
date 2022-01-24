@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 $color-primary: #ffda05;
+$color-body: black;
 $main-font: "Poppins", sans-serif;
 
 * {
@@ -60,7 +61,6 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
-  padding: 1rem 0;
 
   .logo {
     height: 2rem;
@@ -158,3 +158,93 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.menu__btn {
+  display: flex;
+  cursor: pointer;
+}
+
+.menu__list {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 100;
+  border-radius: 4px;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.menu__link {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: $color-body;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+// @media (min-width: 768px) {
+//   .nav {
+//     position: static;
+//     padding: 3rem;
+//   }
+
+//   .nav-container {
+//     padding-right: 2rem;
+//     padding-left: 2rem;
+//   }
+
+//   .logo__img {
+//     height: 6rem;
+//   }
+
+//   .menu__btn {
+//     display: none;
+//   }
+
+//   .menu__list {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     width: 45%;
+//     padding: 0 2.7rem;
+//     box-shadow: none;
+//   }
+
+//   .menu__link {
+//     padding: 4.4rem 1.7rem;
+//     font-size: 1.6rem;
+//     line-height: 2rem;
+//     color: $color-body;
+
+//     &:hover {
+//       color: $color-body;
+//     }
+
+//     &:active {
+//       color: red;
+//     }
+//   }
+// }
