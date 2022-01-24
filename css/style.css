@@ -234,6 +234,7 @@ body {
   text-decoration: none;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+  font-weight: 400;
 }
 
 .menu__link:active {
