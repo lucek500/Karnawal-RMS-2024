@@ -393,6 +393,7 @@ main section h2 .highlight::after {
 }
 
 .price {
+  margin-bottom: 5rem;
   overflow: hidden;
 }
 
@@ -442,5 +443,96 @@ main section h2 .highlight::after {
   font-weight: 300;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
+}
+
+.footer {
+  padding: 2rem 2rem 0.5rem;
+}
+
+.footer .ask {
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer .ask.highlight::after {
+  left: 0.2rem;
+  right: 0.8rem;
+  bottom: 0.4rem;
+  height: 0.5rem;
+}
+
+.footer .footer-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer-person-container {
+  padding-left: 0.5rem;
+  margin: 0.5rem 0 2rem;
+}
+
+.footer-person {
+  margin-bottom: 0.5rem;
+}
+
+.footer-person .function {
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-top: -0.2rem;
+}
+
+.footer-person .phone {
+  color: inherit;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-person .phone .icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 0.5rem;
+}
+
+.footer .copyrights {
+  margin: 0 -2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .logo {
+  height: 24px;
+  width: 24px;
+}
+
+.footer .logo-title {
+  font-size: 0.7rem;
+}
+
+.footer .author {
+  font-size: 0.6rem;
+  font-weight: 300;
+  padding-right: 1rem;
+}
+
+.footer .author-link {
+  color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
