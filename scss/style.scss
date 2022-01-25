@@ -12,6 +12,7 @@ $main-font: "Poppins", sans-serif;
 
 body {
   font-family: $main-font;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -472,7 +473,7 @@ main section {
   }
 
   .copyrights {
-    margin: 0 -2rem;
+    margin: 0 -1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -489,7 +490,6 @@ main section {
   .author {
     font-size: 0.6rem;
     font-weight: 300;
-    padding-right: 1rem;
     &-link {
       color: inherit;
     }

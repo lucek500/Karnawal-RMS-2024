@@ -8,6 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -505,7 +506,7 @@ main section h2 .highlight::after {
 }
 
 .footer .copyrights {
-  margin: 0 -2rem;
+  margin: 0 -1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,7 +530,6 @@ main section h2 .highlight::after {
 .footer .author {
   font-size: 0.6rem;
   font-weight: 300;
-  padding-right: 1rem;
 }
 
 .footer .author-link {
