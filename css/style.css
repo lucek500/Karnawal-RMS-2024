@@ -422,12 +422,11 @@ main section h2 .highlight::after {
 
 .price .main-price .decorator {
   position: absolute;
-  top: 20px;
-  left: -57px;
-  -webkit-transform: scale(3);
-          transform: scale(3);
+  top: -60px;
+  left: -222px;
   z-index: -1;
   pointer-events: none;
+  height: 250px;
 }
 
 .price .price-value {
