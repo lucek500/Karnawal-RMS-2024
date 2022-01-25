@@ -326,4 +326,65 @@ main section h2 .highlight::after {
   font-weight: 400;
   text-align: center;
 }
+
+.plan .comming-soon {
+  margin: 1rem 0;
+}
+
+.place-conatiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.place-conatiner .place-name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.place-conatiner .place-desc {
+  font-style: italic;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  line-height: 16px;
+  margin-bottom: 1rem;
+}
+
+.place-conatiner .place-desc a {
+  text-decoration: underline;
+  color: inherit;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3rem;
+}
+
+.place-conatiner .place-desc a .icon {
+  height: 16px;
+  width: 16px;
+}
+
+.place-conatiner .place-desc span {
+  opacity: 0.5;
+}
 /*# sourceMappingURL=style.css.map */
