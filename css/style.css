@@ -387,4 +387,61 @@ main section h2 .highlight::after {
 .place-conatiner .place-desc span {
   opacity: 0.5;
 }
+
+.place-conatiner p {
+  text-align: center;
+}
+
+.price {
+  overflow: hidden;
+}
+
+.price .price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 2rem;
+}
+
+.price .main-price {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.price .main-price .decorator {
+  position: absolute;
+  top: 20px;
+  left: -57px;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.price .price-value {
+  list-style: none;
+}
+
+.price .price-value li {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.price .price-value-title {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
 /*# sourceMappingURL=style.css.map */
