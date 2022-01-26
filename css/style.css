@@ -265,6 +265,10 @@ main section h2 .highlight::after {
   bottom: 0.5rem;
 }
 
+.topic p {
+  margin-top: 1rem;
+}
+
 .prelegents-container {
   padding-top: 1rem;
   display: -webkit-box;
