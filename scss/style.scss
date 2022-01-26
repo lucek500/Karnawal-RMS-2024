@@ -287,13 +287,13 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2.5rem;
 }
 
 .prelegent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2.5rem;
 
   .image-container {
     position: relative;
