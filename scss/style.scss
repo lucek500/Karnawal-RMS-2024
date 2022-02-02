@@ -415,10 +415,59 @@ main section {
 }
 
 .plan {
-  .comming-soon {
-    margin: 1rem 0;
+  .transport {
+    list-style: none;
+    margin-top: 2rem;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2.5rem;
+
+      span {
+        display: flex;
+        align-items: center;
+        // margin-bottom: 1rem;
+      }
+    }
+
+    .train {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      @media (min-width: $breakpoint-desktop) {
+        font-size: 1.6rem;
+      }
+    }
+
+    .hour {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+      @media (min-width: $breakpoint-desktop) {
+        font-size: 1.6rem;
+      }
+    }
+
+    small {
+      opacity: 0.6;
+      font-size: 1.1rem;
+      margin-left: 2.2rem;
+      font-style: italic;
+      @media (min-width: $breakpoint-desktop) {
+        font-size: 1.2rem;
+        margin-left: 2.3rem;
+      }
+    }
+  }
+
+  .specific-plan {
+    text-align: center;
+    font-size: 1.2rem;
     @media (min-width: $breakpoint-desktop) {
       text-align: left;
+      font-size: 1.4rem;
+      margin-top: 3rem;
     }
   }
 }
