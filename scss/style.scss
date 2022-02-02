@@ -205,6 +205,14 @@ body {
   &:hover {
     background-color: lighten($color-primary, 10%);
   }
+
+  &.disabled {
+    font-size: 1rem;
+    background-color: #ccc;
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 .comming-soon {
