@@ -7,7 +7,7 @@
     const countDown = new Date("April 4, 2023 16:00:00").getTime(),
         x = setInterval(function () {
 
-            const now = new Date().getTime(),
+            const now = new Date("March 4, 2023 16:00:00").getTime(),
                 distance = countDown - now;
 
             document.getElementById("days").innerText = Math.floor(distance / (day)),
