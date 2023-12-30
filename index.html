@@ -16,6 +16,42 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Pobierz datę docelową w formie obiektu Date
+    var targetDate = new Date("January 28, 2024 00:00:00").getTime();
+  
+    // Aktualizuj czas co sekundę
+    var countdownInterval = setInterval(function() {
+      // Pobierz aktualny czas
+      var currentDate = new Date().getTime();
+  
+      // Oblicz pozostały czas w milisekundach
+      var timeRemaining = targetDate - currentDate;
+  
+      // Oblicz dni, godziny, minuty i sekundy
+      var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  
+      // Aktualizuj elementy HTML
+      document.getElementById("countdown").innerHTML =
+        "<h4 class='date'>26-28 stycznia 2024</h4>" +
+        "<ul>" +
+        "<li><span>" + days + "</span>dni</li>" +
+        "<li><span>" + hours + "</span>godzin</li>" +
+        "<li><span>" + minutes + "</span>minut</li>" +
+        "<li><span>" + seconds + "</span>sekund</li>" +
+        "</ul>";
+  
+      // Sprawdź, czy osiągnięto datę docelową
+      if (timeRemaining <= 0) {
+        clearInterval(countdownInterval); // Zatrzymaj odliczanie po osiągnięciu daty docelowej
+        document.getElementById("countdown").innerHTML = "<h4 class='date'>Wydarzenie już się odbyło!</h4>";
+      }
+    }, 1000); // Aktualizuj co sekundę
+  </script>
+  
 </head>
 
 <body>
@@ -59,7 +95,7 @@
       <img class="hero-image" src="./assets/create-pic.svg" alt='hero image' />
       <div class="header-countdown">
         <div id="countdown" class="countdown-timer">
-          <h4 class="date">4-6 kwietnia 2023</h4>
+          <h4 class="date">26-28 stycznia 2024</h4>
           <ul>
             <li><span>12</span>dni</li>
             <li><span>17</span>godzin</li>
@@ -211,18 +247,28 @@
   <footer class="footer">
     <span class="ask highlight">masz pytania? pisz, dzwoń!</span>
     <div class="footer-person-container">
-      <span class="footer-person"><strong>ks. Marek Sawicki SDS</strong> <span class="function">(opiekun) </span> <a
-          href="tel:654323454" class="phone"><svg xmlns="http://www.w3.org/2000/svg"
+
+      
+      <span class="footer-person"><strong>ks. Jurek Lazarek SDS</strong> <span class="function">(Opiekun RMS Bielsko) </span> 
+      <!-- Uzupełnić numer --> 
+      <a href="tel:500396256" class="phone"><svg xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-phone" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path
               d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
             </path>
-          </svg> 657343279</a></span>
-      <span class="footer-person"><strong>Michasia Mamak</strong> <span class="function">(liderka) </span></span>
-      <span class="footer-person"><strong>Wojciech Wichary</strong> <span class="function">(pisz jak coś Cię trapi 😉)
-        </span></span>
+          </svg> 500 396 256</a></span>
+
+
+          <!-- <span class="footer-person"><strong>Michasia Mamak</strong> <span class="function">(liderka) </span></span> --> 
+      <span class="footer-person"><strong>Filip Zięba</strong> <span class="function">(Lider RMS Bielsko)</span>
+      <a href="https://www.facebook.com/filipz27" class="phone"><svg xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-phone" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+      </svg> Skontaktuj się ze mną!</a></span>
     </div>
 
     <p class="good-day">Miłego dnia!</p>
