@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script>
     // Pobierz datę docelową w formie obiektu Date
-    var targetDate = new Date("January 28, 2024 00:00:00").getTime();
+    var targetDate = new Date("January 26, 2024 18:00:00").getTime();
   
     // Aktualizuj czas co sekundę
     var countdownInterval = setInterval(function() {
@@ -47,7 +47,7 @@
       // Sprawdź, czy osiągnięto datę docelową
       if (timeRemaining <= 0) {
         clearInterval(countdownInterval); // Zatrzymaj odliczanie po osiągnięciu daty docelowej
-        document.getElementById("countdown").innerHTML = "<h4 class='date'>Wydarzenie już się odbyło!</h4>";
+        document.getElementById("countdown").innerHTML = "<h4 class='date'>Wydarzenie trwa...</h4>";
       }
     }, 1000); // Aktualizuj co sekundę
   </script>
