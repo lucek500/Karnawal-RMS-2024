@@ -3,11 +3,16 @@
 /* .btn{all:initial;font-family:inherit;background-color:#ffda05;padding:0.8rem 1.6rem;margin:1rem auto;font-weight:800;font-size:1.4rem;border-radius:10rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-shadow:rgba(0,0,0,0.04) 0px 3px 5px;box-shadow:rgba(0,0,0,0.04) 0px 3px 5px;-webkit-transition:background-color 0.3s;transition:background-color 0.3s;cursor:pointer;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:0.3rem}@media (min-width: 992px){.btn{margin:3rem auto 0 3rem;font-size:2rem;padding:1rem 2rem}}.btn .icon{height:32px;width:32px}.btn:hover{background-color:#ffe238}.btn.disabled{font-size:1rem;background-color:#ccc}@media (min-width: 992px){.btn.disabled{font-size:1.4rem}} */
 
 .containerbtn{
+    width: 100%;
     position: relative;
     text-align: center;
     transform: translate(-50%,-50%);
     margin-top: 4rem;
-    margin-left: 11.2rem;
+    margin-left: 11.2rem; 
+    display: flex;
+    justify-content: center;
+   /* border: 1px solid red; */
+   
 }
 .button{
     border: none;
