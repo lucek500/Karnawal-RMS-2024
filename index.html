@@ -75,7 +75,7 @@
               <a href="#topic" class="menu__link menu__link-js">Temat</a>
             </li>
             <li class="menu__element">
-              <a href="#prelegents" class="menu__link menu__link-js">Prowadzący</a>
+              <a href="#prelegents" class="menu__link menu__link-js">Prowadzący/Goście</a>
             </li>
             <li class="menu__element">
               <a href="#plan" class="menu__link menu__link-js">Plan</a>
@@ -92,19 +92,19 @@
           </ul>
         </div>
       </nav>
-      <h1 class="header-title">Do czego zostałeś <span class="highlight">stworzony</span>?</h1>
+      <h1 class="header-title">A czy ty Go <span class="highlight">uwielbiasz</span>?</h1>
       <p class="header-description">
-        Jeśli szukasz odpowiedzi, albo chcesz posłuchać osób, które ją zalazły, to spędź z nami czas.
+       Jeśli chcesz zgłębić ten temat, a przy okazji miło spędzić karnawałowy weekend, zapraszamy do nas.
       </p>
-      <img class="hero-image" src="./assets/create-pic.svg" alt='hero image' />
+      <img class="hero-image" src="./assets/party-heroimage.svg" alt='hero image' />
       <div class="header-countdown">
         <div id="countdown" class="countdown-timer">
           <h4 class="date">26-28 stycznia 2024</h4>
           <ul>
-            <li><span>12</span>dni</li>
-            <li><span>17</span>godzin</li>
-            <li><span>36</span>minut</li>
-            <li><span>09</span>sekund</li>
+            <li><span>--</span>dni</li>
+            <li><span>--</span>godzin</li>
+            <li><span>--</span>minut</li>
+            <li><span>--</span>sekund</li>
           </ul>
         </div>
         <div id="content" class="emoji">
@@ -113,11 +113,15 @@
           <span>🎂</span>
         </div>
       </div>
+      <div class="containerbtn">
+        <button class="button" onclick="window.location.href='https://forms.gle/vBuU11r1ufYTWeMA9';">Zapisz się teraz</button>
+       
+     
+     <!-- Stary link
       <a class="btn join-btn"
         href="https://docs.google.com/forms/d/e/1FAIpQLSernkC6fRIfU2L2anJGdI1Jhr93egFzUOUGivGje6nAg21jnQ/viewform?usp=sf_link">
-        Zapisz się teraz
-
-      </a>
+        Zapisz się teraz 
+      </a> -->
     </div>
   </header>
 
@@ -125,9 +129,13 @@
     <div class="container">
       <section class="topic" id="topic">
         <h2><span class="highlight">temat</span> </h2>
-        Powołanie to trudny temat zwłaszcza w młodym wieku, dlatego chcemy ten weekend spędzić na słuchaniu osób, które
+        Uwielbienie, to wbrew pozorom niełatwa sprawa. Nasz gość, Ewa, poszerzy naszą wiedzę na ten temat. 
+        Łącząc naukę z zabawą, wykorzystamy ten czas na spotkania, integracje oraz warsztaty.  
+        Nasz wyjazd zakończymy tematyczną imprezą karnawałową - dobra zabawa gwarantowana!
+        
+        <!-- Powołanie to trudny temat zwłaszcza w młodym wieku, dlatego chcemy ten weekend spędzić na słuchaniu osób, które
         już je odkryły i chcą się tym dzielić. Nie zabraknie też integracji, dobrej zabawy i odpoczynku od brudnego
-        miasta i szkoły.
+        miasta i szkoły. -->
         <p><strong>Nie może Ciebie zabraknąć!</strong></p>
       </section>
       <section class="prelegents" id="prelegents">
@@ -137,22 +145,39 @@
           <div class="prelegent">
             <div class="image-container">
 
-              <img src="./assets/asheafi-abebe.jpeg" alt="Ashenafi Abebe" class="prelegent-img" loading="lazy">
+              <img src="./assets/ewak.jpg" alt="Ewa Kucharska" class="prelegent-img" loading="lazy">
             </div>
 
-            <h4 class="prelegent-name">o. Ashenafi Abebe</h4>
-            <p class="prelegent-desc"> Jego imię znaczy "miłość zwycięży". Na co dzień jest kapłanem oddanym Matce
-              Bożej
-              głoszącym Jezusa po całym świecie.
+            <h4 class="prelegent-name">Ewa Kucharska</h4>
+            <p class="prelegent-desc"> Kobieta pełna Bożej radości i otwartości na zmiany. Poszukuje głębi i sensu w różnych sferach życia, nie zaniedbując przy tym <i><b>wielbienia</b></i> Boga.
+          </div>
+          <div class="prelegent">
+            <div class="image-container">
+              <img src="./assets/jurekzjezusem.png" alt="Jurek Lazarek" class="prelegent-img" loading="lazy">
+            </div>
+            <h4 class="prelegent-name">ks. Jurek Lazarek SDS</h4>
+            <p class="prelegent-desc">Utalentowany muzycznie, pełen energii opiekun RMS Bielsko. Uwielbia pracować z młodzieżą,
+               dlatego przez wiele lat prowadził ogólnopolski Ruch Młodzieży Salwatoriańskiej.</p>
+          </div>
+        </div>
+        <h2><span class="highlight">gościnnie</span></h2>
+        <div class="prelegents-container">
+          <div class="prelegent">
+            <div class="image-container">
+
+              <img src="./assets/porada.jpg" alt="Wojciech Porada" class="prelegent-img" loading="lazy">
+            </div>
+
+            <h4 class="prelegent-name">ks. Wojciech Porada SDS</h4>
+            <p class="prelegent-desc"> Wieloletni misjonarz i obecny opiekun Ruchu Młodzieży Salwatoriańskiej. Z chęcią dzieli się swoim doświadczeniem i służy poradą.
             </p>
           </div>
           <div class="prelegent">
             <div class="image-container">
-              <img src="./assets/marek-sawicki.jpg" alt="Marek Sawicki" class="prelegent-img" loading="lazy">
+              <img src="./assets/xkoszyl3.png" alt="Karol Koszyl" class="prelegent-img" loading="lazy">
             </div>
-            <h4 class="prelegent-name">ks. Marek Sawicki SDS</h4>
-            <p class="prelegent-desc">Zawsze uśmiechnięty z wyciągniętą pomocną dłonią. Idealny przykład, że Boży
-              plan odkrywa się z czasem. </p>
+            <h4 class="prelegent-name">ks. Karol Koszyl SDS</h4>
+            <p class="prelegent-desc">Duszpasterz RMS, na pierwszym miejscu stawia dobro i szczęście drugiej osoby. Prawdziwy mistrz kuchni! </p>
           </div>
         </div>
       </section>
@@ -160,7 +185,7 @@
       <div class="desktop-container">
         <section class="plan" id="plan">
           <h2><span class="highlight">plan</span></h2>
-          <ul class="transport">
+         <!-- <ul class="transport">
             <li>
               <span class="train"> 🚆 BB <svg xmlns="http://www.w3.org/2000/svg"
                   class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24"
@@ -184,61 +209,58 @@
                 </svg> BB</span> <span class="hour">🕛 Niedziela 13:36</span> <small> koło 15:00 jesteśmy w Bielsku
               </small>
             </li>
-          </ul>
+          </ul> -->
 
-          <div class="specific-plan">szczegółowy plan na miejscu 😉 </div>
-        </section>
+          <div class="specific-plan">coming soon 😉 </div>
+        </section> 
 
         <section class="items-to-take" id="items-to-take">
           <h2><span class="highlight">co zabrać?</span> </h2>
           <ul class="items">
-            <li>📝 Zgodę rodzica <small>
+          <!--  <li>📝 Zgodę rodzica <small>
                 <a href="./zgoda.pdf" download>pobierz tutaj</a>
               </small> 
-            </li>
+            </li> -->
             <li>📖 Pismo Święte</li>
             <li>🍭 Coś słodkiego</li>
-            <li>😴 Śpiwór</li>
-            <li>🧦 Ciepłe ubrania</li>
+            <li>🤪 Dobry humor</li>
+            <li>😴 Śpiwór - dogadaj się tam, gdzie nocujesz</li>
+           <!-- <li>🧦 Ciepłe ubrania</li>
             <li>🧩 Fajną planszówkę jak posiadasz</li>
             <li>👠 Kapcie</li>
-            <li>💸 Pieniądze <small class="gray">rozliczymy się na miejscu</small></li>
-            <li>🤪 Dobry humor</li>
+            <li>💸 Pieniądze <small class="gray">rozliczymy się na miejscu</small></li> -->
+            
           </ul>
         </section>
 
         <section class="place" id="place">
           <h2><span class="highlight">miejsce</span> </h2>
           <div class="place-conatiner">
-            <h5 class="place-name">Luce Chata</h5>
+            <h5 class="place-name">Kościół NMP Królowej Świata</h5>
             <h6 class="place-desc"><a
-                href="https://www.google.com/maps?ll=49.520378,19.039127&z=10&t=m&hl=pl-PL&gl=US&mapclient=embed&q=Nieledwia+160+34-360">
+                href="https://maps.app.goo.gl/Y2ukyXeKdLLdTxpY8">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24"
                   height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                   stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <circle cx="12" cy="11" r="3"></circle>
                   <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
-                </svg> Nieledwia
-                160</a> <span>(5 minut za Milówką)</span></h6>
-            <p>Klimatyczna chatka w górach. Miejsce, w którym można odpocząć od miasta, ale też spędzić dobry czas z
-              rodziną albo znajomymi. Na ten weekend zamienia się w naszą bazę, w której będziemy poznawać Boga i razem
-              się
-              integrować.</p>
+                </svg> Startowa 16, 43-309 Bielsko-Biała </a> 
+                <span>(chwila od przystanku jedynki)</span></h6>
+            <p>Kościół tuż przy centrum Cygańskiego lasu. Przeżyjemy w nim (oraz jego salkach) mszę, spotkania oraz przede wszystkim - IMPREZĘ 🎉</p>
           </div>
         </section>
 
         <section class="price" id="price">
           <h2><span class="highlight">cena</span> </h2>
           <div class="price-container">
-            <h3 class="main-price">80zł
+            <h3 class="main-price">0zł!
               <img src="./assets/price-line.svg" alt="decorator" class="decorator">
             </h3>
 
             <ul class="price-value">
-              <li>🏠 Nocleg</li>
-              <li>🥗 Wyżywienie</li>
-              <li>🚆 Transport</li>
+              <li>🌟 Warsztaty</li>
+              <li>🎊 Impreza</li>
               <li>🚀 Atrakcje</li>
             </ul>
           </div>
@@ -287,7 +309,8 @@
       </div>
       <span class="author">stworzone z ❤️ przez
       <a href="https://www.facebook.com/w.wichary" class="author-link" target="_blank" rel="noopener">ww</a> & 
-      <a href="https://www.facebook.com/lucek.lucek.5439" class="author-link" target="_blank" rel="noopener">ls</a> </span>
+      <a href="https://www.facebook.com/lucek.lucek.5439" class="author-link" target="_blank" rel="noopener">ls</a> & 
+      <a href="https://www.facebook.com/filipz27" class="author-link" target="_blank" rel="noopener">fz</a></span>
 
 
 
